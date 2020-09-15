@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="/custom.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row py-5">
+            <a class="btn btn-danger" href="/" role="button">Volver este botón no aparece en el resultado final</a>
+        </div>
+        <div class="row"> 
+            <h1 class="d-block">Formulario PQRSD</h1>
+            <p> Estimado usuario, sea bienvenido al Sistema de Atención al Ciudadano del Instituto Nacional para Ciegos
+                INCI. En este sistema
+                usted podrá: radicar requerimientos sobre consultas, quejas o reclamos, sugerencias,
+                felicitaciones y trámites y podrá consultar en cualquier momento el estado de los requerimientos
+                registrados de una forma rápida y efectiva.
+                <ul>
+                    <li><strong>PETICIÓN</strong> es cualquier solicitud que haga el usuario al prestador del servicio,
+                        que se relacione con el
+                        servicio que se le presta. Estas pueden ser de interés general, interés particular, petición de
+                        información y consulta. (ver Código Contencioso Administrativo).</li>
+                    <li><strong>QUEJA:</strong> es la formalización de una no conformidad en el servicio percibida por
+                        el cliente. Normalmente el
+                        usuario puede quejarse por: la forma y condiciones en que se le ha prestado el servicio, la
+                        actuación de algún funcionario de la entidad que ofrece el servicio.</li>
+                    <li> <strong>RECLAMO:</strong> es una solicitud para que la entidad revise, ajuste o modifique los
+                        resultados obtenidos por el
+                        cliente frente a un servicio requerido por él.</li>
+                    <li> <strong>SUGERENCIA: </strong> Es la manifestación de una idea o propuesta para mejorar la prestación del servicio o la gestión de la Entidad.</li>
+                    <li> <strong>DENUNCIA: </strong>  Es la puesta en conocimiento ante una autoridad competente de una conducta posiblemente irregular, para que se adelante la correspondiente investigación penal, disciplinaria, fiscal, administrativa - sancionatoria o ético profesional.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="row">
+            <p>Los campos obligatorios se marcan con un <abbr title="Campo Requerido">*</abbr></p>
+        </div>
+        <div class="row my-3">
+            <div class="card w-100">
+                <h2 class="card-header bg-dark text-white">Información del solicitante</h2>
+                <div class="card-body">
+                    <form>
+                        <div class="form-check">
+                            <div class="form-group">
+                                <label class="font-weight-bolder" for="tipoDeSolicitante">Seleccione tipo de solicitante <span class="text-danger font-weight-bolder"> * </span></label>
+                                <select class="form-control border border-secondary" id="tipoDeSolicitante">
+                                    <option>Persona Natural</option>
+                                    <option>Persona Jurídica</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bolder" for="exampleInputPassword1">Número de identificación (solo números o letras) <span class="text-danger font-weight-bolder">*</span> </label>
+                                <input type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bolder" for="exampleInputPassword1">Nombres del Solicitante <span class="text-danger font-weight-bolder"> * </span> </label>
+                                <input type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bolder" for="exampleInputPassword1">Primer Apellido <span class="text-danger font-weight-bolder"> * </span></label>
+                                <input  type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bolder" for="exampleInputPassword1">Segundo Apellido <span class="text-danger font-weight-bolder"> * </span></label>
+                                <input type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="card w-100">
+                <h2 class="card-header bg-dark text-white">Datos de Contacto del solicitante</h2>
+                <div class="card-body">
+                    <form>
+                        <div class="form-check">
+                            <div class="form-group">
+                                <label class="font-weight-bolder" for="tipoDeSolicitante">País</label>
+                                <select class="form-control border border-secondary" id="tipoDeSolicitante">
+                                    <option>Colombia</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bolder" for="tipoDeSolicitante">Departamento </label>
+                                <select class="form-control border border-secondary" id="tipoDeSolicitante">
+                                    <option>Colombia</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bolder" for="tipoDeSolicitante">Municipio</label>
+                                <select class="form-control border border-secondary" id="tipoDeSolicitante">
+                                    <option>Colombia</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bolder" for="exampleInputPassword1">Dirección <span class="text-danger font-weight-bolder">*</span> </label>
+                                <input type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bolder" for="exampleInputPassword1">Nombres del Solicitante * </label>
+                                <input type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bolder" for="exampleInputPassword1">Primer Apellido</label>
+                                <input  type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bolder" for="exampleInputPassword1">Segundo Apellido</label>
+                                <input type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
