@@ -40,85 +40,220 @@
             </p>
         </div>
 
-        <div class="row">
-            <p>Los campos obligatorios se marcan con un <abbr title="Campo Requerido">*</abbr></p>
-        </div>
+        <div class="container" style="max-width:1110px;">
+            
+            <!-- Formulario -->
+    
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <h2>Formulario de PQRSD</h2>
+                    <div class="card w-100 my-3">
+                        <h3 class="card-header bg-dark text-white h5">Información del usuario</h3>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="documento"><strong>Elija su tipo de documento de
+                                            identificación</strong><abbr title="Campo Requerido">*</abbr></label>
+                                    <select required class="form-control border border-secondary" id="documento">
+                                        <fieldset>
+                                            <option>--Seleccione--</option>
+                                            <option>Cédula de Ciudadanía</option>
+                                            <option>Cédula de Extrangería</option>
+                                            <option>Tarjeta de Identidad</option>
+                                            <option>NIUP (Número unico de identificación personal)</option>
+                                        </fieldset>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="id"><strong>Número de documento de identificación</strong><abbr
+                                            title="Campo Requerido">*</abbr></label>
+                                    <input type="text" class="form-control border border-secondary" id="id">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name"><strong>Nombres Completos</strong><abbr
+                                            title="Campo Requerido">*</abbr></label>
+                                    <input type="text" class="form-control border border-secondary" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname"><strong>Apellidos Completos</strong><abbr
+                                            title="Campo Requerido">*</abbr></label>
+                                    <input type="text" class="form-control border border-secondary" id="lastname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender"><strong>Genero</strong><abbr title="Campo Requerido">*</abbr></label>
+                                    <select required class="form-control border border-secondary" id="gender">
+                                        <fieldset>
+                                            <option>--Seleccione--</option>
+                                            <option>Masculino</option>
+                                            <option>Femenino</option>
+                                        </fieldset>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="grupopoblacional"><strong>Grupo Poblacional</strong><abbr
+                                            title="Campo Requerido">*</abbr></label>
+                                    <select required class="form-control border border-secondary" id="grupopoblacional">
+                                        <fieldset>
+                                            <option>--Seleccione--</option>
+                                            <option>Índigena</option>
+                                            <option>ROM</option>
+                                            <option>Afro</option>
+                                            <option>Raizal</option>
+                                            <option>Ninguno</option>
+                                        </fieldset>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <div class="row my-3">
-            <div class="card w-100">
-                <h2 class="card-header bg-dark text-white">Información del solicitante</h2>
-                <div class="card-body">
-                    <form>
-                        <div class="form-check">
+            <div class="col-md-12">
+                <div class="card w-100 my-3">
+                    <h3 class="card-header bg-dark text-white h5">Datos de contacto</h3>
+                    <div class="card-body">
+                        <form>
                             <div class="form-group">
-                                <label class="font-weight-bolder" for="tipoDeSolicitante">Seleccione tipo de solicitante <span class="text-danger font-weight-bolder"> * </span></label>
-                                <select class="form-control border border-secondary" id="tipoDeSolicitante">
-                                    <option>Persona Natural</option>
-                                    <option>Persona Jurídica</option>
+                                <label for="email"><strong>Correo electronico</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <input type="email" class="form-control border border-secondary" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="deparment"><strong>Departamento de residencia</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <select required class="form-control border border-secondary" id="deparment">
+                                    <fieldset>
+                                        <option>--Seleccione--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </fieldset>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label class="font-weight-bolder" for="exampleInputPassword1">Número de identificación (solo números o letras) <span class="text-danger font-weight-bolder">*</span> </label>
-                                <input type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                                <label for="city"><strong>Municipio de residencia</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <select required class="form-control border border-secondary" id="city">
+                                    <fieldset>
+                                        <option>--Seleccione--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </fieldset>
+                                </select>
                             </div>
                             <div class="form-group">
-                                <label class="font-weight-bolder" for="exampleInputPassword1">Nombres del Solicitante <span class="text-danger font-weight-bolder"> * </span> </label>
-                                <input type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                                <label for="territorio"><strong>Tipo de territorio</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <select required class="form-control border border-secondary" id="territorio">
+                                    <fieldset>
+                                        <option>--Seleccione--</option>
+                                        <option>Rural</option>
+                                        <option>Urbano</option>
+                                    </fieldset>
+                                </select>
                             </div>
                             <div class="form-group">
-                                <label class="font-weight-bolder" for="exampleInputPassword1">Primer Apellido <span class="text-danger font-weight-bolder"> * </span></label>
-                                <input  type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                                <label for="telephone"><strong>Teléfono fijo</strong><abbr title="Campo Requerido">*</abbr></label>
+                                <input type="text" class="form-control border border-secondary" id="telephone">
                             </div>
                             <div class="form-group">
-                                <label class="font-weight-bolder" for="exampleInputPassword1">Segundo Apellido <span class="text-danger font-weight-bolder"> * </span></label>
-                                <input type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                                <label for="phone"><strong>Teléfono celular</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <input type="text" class="form-control border border-secondary" id="phone">
                             </div>
-                        </div>
-                    </form>
+                            <div class="form-group">
+                                <label for="condicion"><strong>Condición Visual</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <select required class="form-control" id="condicion">
+                                    <fieldset>
+                                        <option>--Seleccione--</option>
+                                        <option>Ciego</option>
+                                        <option>Baja Visión</option>
+                                    </fieldset>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row my-5">
-            <div class="card w-100">
-                <h2 class="card-header bg-dark text-white">Datos de Contacto del solicitante</h2>
-                <div class="card-body">
-                    <form>
-                        <div class="form-check">
+        <div class="row my-3">
+            <div class="col-md-12">
+                <div class="card w-100 my-3">
+                    <h3 class="card-header bg-dark text-white h5">Documentos adjuntos</h3>
+                    <div class="card-body">
+                        <form>
                             <div class="form-group">
-                                <label class="font-weight-bolder" for="tipoDeSolicitante">País</label>
-                                <select class="form-control border border-secondary" id="tipoDeSolicitante">
-                                    <option>Colombia</option>
+                                <label for="condicion"><strong>Tipo de solicitud</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <select required class="form-control" id="condicion">
+                                    <fieldset>
+                                        <option>--Seleccione--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </fieldset>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label class="font-weight-bolder" for="tipoDeSolicitante">Departamento </label>
-                                <select class="form-control border border-secondary" id="tipoDeSolicitante">
-                                    <option>Colombia</option>
+                                <label for="condicion"><strong>Tema de su solicitud</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <select required class="form-control" id="condicion">
+                                    <fieldset>
+                                        <option>--Seleccione--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </fieldset>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label class="font-weight-bolder" for="tipoDeSolicitante">Municipio</label>
-                                <select class="form-control border border-secondary" id="tipoDeSolicitante">
-                                    <option>Colombia</option>
-                                </select>
+                                <label for="telephone"><strong>Referente al Radicado No. (solo numeros, 14 dígitos)</strong><abbr title="Campo Requerido">*</abbr></label>
+                                <input type="text" class="form-control border border-secondary" id="telephone">
                             </div>
                             <div class="form-group">
-                                <label class="font-weight-bolder" for="exampleInputPassword1">Dirección <span class="text-danger font-weight-bolder">*</span> </label>
-                                <input type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                                <label for="telephone"><strong>Asunto</strong><abbr title="Campo Requerido">*</abbr></label>
+                                <input type="text" class="form-control border border-secondary" id="telephone">
                             </div>
                             <div class="form-group">
-                                <label class="font-weight-bolder" for="exampleInputPassword1">Nombres del Solicitante * </label>
-                                <input type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                                <label for="telephone"><strong>Descripción</strong><abbr title="Campo Requerido">*</abbr></label>
+                                <textarea type="text-area" class="form-control border border-secondary" id="telephone"rows="3"></textarea>
                             </div>
                             <div class="form-group">
-                                <label class="font-weight-bolder" for="exampleInputPassword1">Primer Apellido</label>
-                                <input  type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                                <label for="archivocedula"><strong>Anexar Soportes</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <input type="file" title="Cargué Aquí su soporte" class="form-control-file" id="archivocedula">
                             </div>
-                            <div class="form-group">
-                                <label class="font-weight-bolder" for="exampleInputPassword1">Segundo Apellido</label>
-                                <input type="number" class="form-control border border-secondary" id="exampleInputPassword1">
+                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-md-12">
+                <div class="card w-100 my-3">
+                    <h3 class="card-header bg-dark text-white h5">Aceptar políticas<abbr title="Campo Requerido">*</abbr>
+                    </h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="terminos">
+                                <label class="form-check-label" for="terminos">
+                                    Confirmo que he leído y acepto los términos y condiciones.
+                                </label>
                             </div>
-                        </div>
-                    </form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="politica">
+                                <label class="form-check-label" for="politica">
+                                    Confirmo que he leído y acepto las <a href="#" target="_blank"> <strong class="text-dark">Política de
+                                        tratamiento de
+                                        datos</strong></a>
+                                </label>
+                            </div>
+                            <div class="form-group pt-4">
+                                <button type="submit" class="btn btn-dark">Enviar Registro</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
