@@ -10,15 +10,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="custom.css">
-
     <title>Formulario de Registro Biblioteca</title>
 </head>
 
 <body>
-    <div class="container" style="max-width:1110px;">
-        <div class="row py-5">
-            <a class="btn btn-danger" href="./" role="button">Volver este botón no aparece en el resultado final</a>
+    <div class="bg-inci logos">
+        <div class="container mb-4">
+            <div class="row p-1">
+                <div class="col-md-6">
+                    <img src="https://inci.gov.co/sites/default/files/inline-images/logo-alpha_0.png" alt="">
+                </div>
+                <div class="col-md-6 text-right">
+                    <img width="38px" src="https://inci.gov.co/sites/default/files/inline-images/colombiam_1.png"
+                        alt="">
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="container" style="max-width:1110px;">
         <div class="row">
             <div class="col-md-12">
                 <h1>Registro a la Biblioteca Virtual</h1>
@@ -67,7 +76,7 @@
             <div class="col-md-12">
                 <h2>Formulario de Registro</h2>
                 <div class="card w-100 my-3">
-                    <h3 class="card-header bg-dark text-white h5">Información del usuario</h3>
+                    <h3 class="card-header bg-headcard text-white h5">Información del usuario</h3>
                     <div class="card-body">
                         <form>
                             <div class="form-group">
@@ -77,9 +86,8 @@
                                         identificación</strong><abbr title="Campo Requerido">*</abbr></label>
                                 <select required class="form-control border border-secondary" id="documento">
                                     <fieldset>
-                                        <option>--Seleccione--</option>
                                         <option>Cédula de Ciudadanía</option>
-                                        <option>Cédula de Extrangería</option>
+                                        <option>Cédula de Extranjería</option>
                                         <option>Tarjeta de Identidad</option>
                                         <option>NIUP (Número unico de identificación personal)</option>
                                     </fieldset>
@@ -101,10 +109,10 @@
                                 <input type="text" class="form-control border border-secondary" id="lastname">
                             </div>
                             <div class="form-group">
-                                <label for="gender"><strong>Genero</strong><abbr title="Campo Requerido">*</abbr></label>
+                                <label for="gender"><strong>Genero</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
                                 <select required class="form-control border border-secondary" id="gender">
                                     <fieldset>
-                                        <option>--Seleccione--</option>
                                         <option>Masculino</option>
                                         <option>Femenino</option>
                                     </fieldset>
@@ -115,7 +123,6 @@
                                         title="Campo Requerido">*</abbr></label>
                                 <select required class="form-control border border-secondary" id="grupopoblacional">
                                     <fieldset>
-                                        <option>--Seleccione--</option>
                                         <option>Índigena</option>
                                         <option>ROM</option>
                                         <option>Afro</option>
@@ -129,155 +136,236 @@
                 </div>
             </div>
         </div>
-    <div class="row my-3">
-        <div class="col-md-12">
-            <div class="card w-100 my-3">
-                <h3 class="card-header bg-dark text-white h5">Datos de contacto</h3>
-                <div class="card-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="email"><strong>Correo electronico</strong><abbr
-                                    title="Campo Requerido">*</abbr></label>
-                            <input type="email" class="form-control border border-secondary" id="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="username"><strong>Cree un nombre de usuario</strong><abbr
-                                    title="Campo Requerido">*</abbr></label>
-                            <br><small>Este nombre se usará para ingresar a la biblioteca</small>
-                            <input type="text" class="form-control border border-secondary" id="username">
-                        </div>
-                        <div class="form-group">
-                            <label for="deparment"><strong>Departamento de residencia</strong><abbr
-                                    title="Campo Requerido">*</abbr></label>
-                            <select required class="form-control border border-secondary" id="deparment">
-                                <fieldset>
-                                    <option>--Seleccione--</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                </fieldset>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="city"><strong>Municipio de residencia</strong><abbr
-                                    title="Campo Requerido">*</abbr></label>
-                            <select required class="form-control border border-secondary" id="city">
-                                <fieldset>
-                                    <option>--Seleccione--</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                </fieldset>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="territorio"><strong>Tipo de territorio</strong><abbr
-                                    title="Campo Requerido">*</abbr></label>
-                            <select required class="form-control border border-secondary" id="territorio">
-                                <fieldset>
-                                    <option>--Seleccione--</option>
-                                    <option>Rural</option>
-                                    <option>Urbano</option>
-                                </fieldset>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="telephone"><strong>Teléfono fijo</strong><abbr title="Campo Requerido">*</abbr></label>
-                            <input type="text" class="form-control border border-secondary" id="telephone">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone"><strong>Teléfono celular</strong><abbr
-                                    title="Campo Requerido">*</abbr></label>
-                            <input type="text" class="form-control border border-secondary" id="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="date"><strong>Fecha de nacimiento (día, mes, año)</strong><abbr
-                                    title="Campo Requerido">*</abbr></label>
-                            <input type="date" class="form-control border border-secondary" id="date">
-                        </div>
-                        <div class="form-group">
-                            <label for="nivelestudio"><strong>Nivel de estudios</strong><abbr
-                                    title="Campo Requerido">*</abbr></label>
-                            <select required class="form-control" id="nivelestudio">
-                                <fieldset>
-                                    <option>--Seleccione--</option>
-                                    <option>Primaria</option>
-                                    <option>Media</option>
-                                    <option>Técnica</option>
-                                    <option>Técnologica</option>
-                                    <option>Profesional</option>
-                                    <option>Postgrado</option>
-                                </fieldset>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="condicion"><strong>Condición Visual</strong><abbr
-                                    title="Campo Requerido">*</abbr></label>
-                            <select required class="form-control" id="condicion">
-                                <fieldset>
-                                    <option>--Seleccione--</option>
-                                    <option>Ciego</option>
-                                    <option>Baja Visión</option>
-                                </fieldset>
-                            </select>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row my-3">
-        <div class="col-md-12">
-            <div class="card w-100 my-3">
-                <h3 class="card-header bg-dark text-white h5">Documentos adjuntos</h3>
-                <div class="card-body">
-                    <form>
-                        <p>los documentos deben estar en cualquiera de estos formatos, pdf, jpg, png y no tener más
-                            de
-                            2MB de peso. <abbr title="Campo Requerido">*</abbr></p>
-                        <div class="form-group">
-                            <label for="archivocedula"><strong>Archivo con documento de identidad</strong><abbr
-                                    title="Campo Requerido">*</abbr></label>
-                            <input type="file" class="form-control-file" id="archivocedula">
-                        </div>
-                        <div class="form-group">
-                            <label for="archivocertificado"><strong>Archivo con certificado de discapacidad</strong><abbr
-                                    title="Campo Requerido">*</abbr></label>
-                            <input type="file" class="form-control-file" id="archivocertificado">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row my-3">
-        <div class="col-md-12">
-            <div class="card w-100 my-3">
-                <h3 class="card-header bg-dark text-white h5">Aceptar políticas<abbr title="Campo Requerido">*</abbr>
-                </h3>
-                <div class="card-body">
-                    <form>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="terminos">
-                            <label class="form-check-label" for="terminos">
-                                Confirmo que he leído y acepto los términos y condiciones.
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="politica">
-                            <label class="form-check-label" for="politica">
-                                Confirmo que he leído y acepto las <a href="#" target="_blank"> <strong class="text-dark">Política de
-                                    tratamiento de
-                                    datos</strong></a>
-                            </label>
-                        </div>
-                        <div class="form-group pt-4">
-                            <button type="submit" class="btn btn-dark">Enviar Registro</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+        <div class="row my-3">
+            <div class="col-md-12">
+                <div class="card w-100 my-3">
+                    <h3 class="card-header bg-headcard text-white h5">Datos de contacto</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="email"><strong>Correo electronico</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <input type="email" class="form-control border border-secondary" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="username"><strong>Cree un nombre de usuario</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <br><small>Este nombre se usará para ingresar a la biblioteca</small>
+                                <input type="text" class="form-control border border-secondary" id="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="deparment"><strong>Departamento de residencia</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <select required class="form-control border border-secondary" id="deparment">
+                                    <fieldset>
 
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </fieldset>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="city"><strong>Municipio de residencia</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <select required class="form-control border border-secondary" id="city">
+                                    <fieldset>
+
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </fieldset>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="territorio"><strong>Tipo de territorio</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <select required class="form-control border border-secondary" id="territorio">
+                                    <fieldset>
+
+                                        <option>Rural</option>
+                                        <option>Urbano</option>
+                                    </fieldset>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone"><strong>Teléfono fijo</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <input type="text" class="form-control border border-secondary" id="telephone">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><strong>Teléfono celular</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <input type="text" class="form-control border border-secondary" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="date"><strong>Fecha de nacimiento (día, mes, año)</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <input type="date" class="form-control border border-secondary" id="date">
+                            </div>
+                            <div class="form-group">
+                                <label for="nivelestudio"><strong>Nivel de estudios</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <select required class="form-control" id="nivelestudio">
+                                    <fieldset>
+                                        <option>Primaria</option>
+                                        <option>Media</option>
+                                        <option>Técnica</option>
+                                        <option>Técnologica</option>
+                                        <option>Profesional</option>
+                                        <option>Postgrado</option>
+                                    </fieldset>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="condicion"><strong>Condición Visual</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <select required class="form-control" id="condicion">
+                                    <fieldset>
+                                        <option>Ciego</option>
+                                        <option>Baja Visión</option>
+                                    </fieldset>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-md-12">
+                <div class="card w-100 my-3">
+                    <h3 class="card-header bg-headcard text-white h5">Documentos adjuntos</h3>
+                    <div class="card-body">
+                        <form>
+                            <p>Los documentos deben estar en cualquiera de estos formatos, pdf, jpg, png y no tener más
+                                de
+                                2MB de peso. <abbr title="Campo Requerido">*</abbr></p>
+                            <div class="form-group">
+                                <label for="archivocedula"><strong>Archivo con documento de identidad</strong><abbr
+                                        title="Campo Requerido">*</abbr></label>
+                                <input type="file" class="form-control-file" id="archivocedula">
+                            </div>
+                            <div class="form-group">
+                                <label for="archivocertificado"><strong>Archivo con certificado de
+                                        discapacidad</strong><abbr title="Campo Requerido">*</abbr></label>
+                                <input type="file" class="form-control-file" id="archivocertificado">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-md-12">
+                <div class="card w-100 my-3">
+                    <h3 class="card-header bg-headcard text-white h5">Aceptar políticas<abbr
+                            title="Campo Requerido">*</abbr>
+                    </h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="terminos">
+                                <label class="form-check-label" for="terminos">
+                                    Confirmo que he leído y acepto los términos y condiciones.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="politica">
+                                <label class="form-check-label" for="politica">
+                                    Confirmo que he leído y acepto las <a href="#" target="_blank"> <strong
+                                            class="text-dark">Política de
+                                            tratamiento de
+                                            datos</strong></a>
+                                </label>
+                            </div>
+                            <div class="form-group pt-4">
+                                <button type="submit" class="btn btn-dark bg-headcard">Enviar Registro</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-white" style="background-color: #153D8A;">
+        <div class="container">
+            <div class="row d-flex align-items-center py-4 px-3">
+                <div class="col-md-8 text-center text-md-left">
+                    <h2 class="m-0 h3 text-white font-weight-bold">Instituto Nacional Para Ciegos</h2>
+                </div>
+                <div class="col-md-4">
+                    <img class="d-none d-md-block"
+                        src="https://www.inci.gov.co/sites/default/files/footer/logoinciblanco.png"
+                        alt="Logo Instituto Nacional Para Ciegos">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li>Dirección: Carrera 13 # 34 - 91</li>
+                        <li>Teusaquillo, Bogotá Colombia</li>
+                        <li>Código Postal para la República de Colombia: 110311</li>
+                        <li>Horario de atención: <br> Lunes a jueves de 8:00 a.m. a 5:00 p.m. jornada continua y viernes
+                            de 7:00 a.m. a 4:00 p.m.</li>
+                        <br>
+                        <li>Teléfono Conmutador: +57(1) 3846666 Ext. 110</li>
+                        <li>Teléfono Celular: +57(1) 316-874 10 14</li>
+                        <li>Whatsapp: 316-874 10 14</li>
+                        <br>
+                        <li>Correo Institucional: <a class="text-warning"
+                                href="mailto:aciudadano@inci.gov.co">aciudadano@inci.gov.co</a>
+                        </li>
+                        <li>Correo Transparencia <a class="text-warning"
+                                href="mailto:soytransparente@inci.gov.co">soytransparente@inci.gov.co</a></li>
+                        <li>Correo de notificaciones judiciales:<a class="text-warning"
+                                href="mailto:notificacionesjudiciales@inci.gov.co">
+                                notificacionesjudiciales@inci.gov.co</a>
+                        </li>
+                        <br>
+                        <li><a class="text-warning"
+                                href="https://inci.gov.co/sites/default/files/transparenciaok/resolucion-tratamiento-datos-personales.pdf"
+                                target="_blank">Política de privacidad y condiciones de uso</a></li>
+                        <li><a class="text-warning" href="">Mapa del sitio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex p-2">
+                <div class="px-4 py-3 text-center">
+                    <a href="https://www.facebook.com/INCIColombia/" target="_blank">
+                        <img class="mb-1" src="https://www.inci.gov.co/sites/default/files/footer/facebook.png"
+                            alt="Logo, Facebook">
+                        <p class="text-warning m-0">Facebook</p>
+                    </a>
+                </div>
+                <div class="px-4 py-3 text-center">
+                    <a href="https://twitter.com/inci_colombia" target="_blank">
+                        <img class="mb-1" src="https://www.inci.gov.co/sites/default/files/footer/twitter.png"
+                            alt="Logo, Facebook">
+                        <p class="text-warning m-0">Twitter</p>
+                    </a>
+                </div>
+                <div class="px-4 py-3 text-center">
+                    <a href="https://www.youtube.com/user/IncideColombia" target="_blank">
+                        <img class="mb-1" src="https://www.inci.gov.co/sites/default/files/footer/youtube.png"
+                            alt="Logo, Facebook">
+                        <p class="text-warning m-0">Youtube</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="p-3" style="background-color: #3366CC;">
+        <div class="container d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <img src="https://www.inci.gov.co/sites/default/files/footer/logo_marcaColombia.png"
+                    alt="Logo marca Colombia">
+                <div class="p-2"></div>
+                <img src="https://www.inci.gov.co/sites/default/files/footer/logo_govco.png"
+                    alt="Logo Estrategía Gov.co">
+            </div>
+            <div class="col-md-6 text-right">
+                <a class="text-white" href="https://www.gov.co/home/" target="_blank">Conoce GOV.CO aquí</a>
+            </div>
+        </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
